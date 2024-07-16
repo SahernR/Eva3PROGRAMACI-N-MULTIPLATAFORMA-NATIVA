@@ -1,0 +1,47 @@
+.listar-registro {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .listar-registro h2 {
+    color: #bd93f9;
+  }
+  
+  .paciente-card {
+    background-color: #282a36;
+    color: #f8f8f2;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .paciente-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .paciente-card div {
+    flex: 1;
+  }
+  
+  .paciente-card p {
+    margin: 5px 0;
+  }
+  
+  .detalle-link {
+    color: #ff79c6;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  .detalle-link:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,30 @@
+<div class="buscar-registro">
+    <h2>Buscar Pacientes</h2>
+    <form (ngSubmit)="buscarPacientes()">
+      <div>
+        <label for="sexo">Sexo:</label>
+        <input type="text" id="sexo" [(ngModel)]="sexo" name="sexo" />
+      </div>
+      <div>
+        <label for="fechaIngreso">Fecha de Ingreso:</label>
+        <input type="date" id="fechaIngreso" [(ngModel)]="fechaIngreso" name="fechaIngreso" />
+      </div>
+      <div>
+        <label for="enfermedad">Enfermedad:</label>
+        <input type="text" id="enfermedad" [(ngModel)]="enfermedad" name="enfermedad" />
+      </div>
+      <button type="submit">Buscar</button>
+    </form>
+    <div *ngIf="pacientes.length > 0">
+      <h3>Resultados de la Búsqueda</h3>
+      <ul>
+        <li *ngFor="let paciente of pacientes">
+          {{ paciente.nombre }} - {{ paciente.sexo }} - {{ paciente.fechaIngreso | date }} - {{ paciente.enfermedad }}
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="pacientes.length === 0">
+      <p>No se encontraron resultados.</p>
+    </div>
+  </div>
+  

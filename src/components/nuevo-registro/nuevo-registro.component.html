@@ -1,0 +1,64 @@
+<div class="nuevo-registro">
+    <h2>Nuevo Registro de Paciente</h2>
+    <form [formGroup]="pacienteForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="rut">RUT:</label>
+        <input id="rut" formControlName="rut" type="text" />
+        <div *ngIf="pacienteForm.get('rut')?.invalid && pacienteForm.get('rut')?.touched">
+          RUT es requerido.
+        </div>
+      </div>
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" formControlName="nombre" type="text" />
+        <div *ngIf="pacienteForm.get('nombre')?.invalid && pacienteForm.get('nombre')?.touched">
+          Nombre es requerido.
+        </div>
+      </div>
+      <div>
+        <label for="edad">Edad:</label>
+        <input id="edad" formControlName="edad" type="number" />
+        <div *ngIf="pacienteForm.get('edad')?.invalid && pacienteForm.get('edad')?.touched">
+          Edad es requerida y debe ser un número válido.
+        </div>
+      </div>
+      <div>
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" formControlName="sexo">
+          <option value="">Seleccione...</option>
+          <option value="Masculino">Masculino</option>
+          <option value="Femenino">Femenino</option>
+        </select>
+        <div *ngIf="pacienteForm.get('sexo')?.invalid && pacienteForm.get('sexo')?.touched">
+          Sexo es requerido.
+        </div>
+      </div>
+      <div>
+        <label for="fotoPersonal">Foto Personal:</label>
+        <input id="fotoPersonal" formControlName="fotoPersonal" type="text" />
+        <div *ngIf="pacienteForm.get('fotoPersonal')?.invalid && pacienteForm.get('fotoPersonal')?.touched">
+          Foto Personal es requerida.
+        </div>
+      </div>
+      <div>
+        <label for="fechaIngreso">Fecha de Ingreso:</label>
+        <input id="fechaIngreso" formControlName="fechaIngreso" type="date" />
+        <div *ngIf="pacienteForm.get('fechaIngreso')?.invalid && pacienteForm.get('fechaIngreso')?.touched">
+          Fecha de Ingreso es requerida.
+        </div>
+      </div>
+      <div>
+        <label for="enfermedad">Enfermedad:</label>
+        <input id="enfermedad" formControlName="enfermedad" type="text" />
+        <div *ngIf="pacienteForm.get('enfermedad')?.invalid && pacienteForm.get('enfermedad')?.touched">
+          Enfermedad es requerida.
+        </div>
+      </div>
+      <div>
+        <label for="revisado">Revisado:</label>
+        <input id="revisado" formControlName="revisado" type="checkbox" />
+      </div>
+      <button type="submit" [disabled]="pacienteForm.invalid">Registrar</button>
+    </form>
+  </div>
+  

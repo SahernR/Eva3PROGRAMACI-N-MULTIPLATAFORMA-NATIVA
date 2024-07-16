@@ -1,0 +1,19 @@
+<div class="busqueda-registro">
+    <h2>Búsqueda Personalizada de Pacientes</h2>
+    <form (submit)="buscar()">
+      <div>
+        <label for="sexo">Sexo:</label>
+        <input type="text" id="sexo" [(ngModel)]="sexo" name="sexo" />
+      </div>
+      <div>
+        <label for="fechaIngreso">Fecha de Ingreso:</label>
+        <input type="date" id="fechaIngreso" [(ngModel)]="fechaIngreso" name="fechaIngreso" />
+      </div>
+      <div>
+        <label for="enfermedad">Enfermedad:</label>
+        <input type="text" id="enfermedad" [(ngModel)]="enfermedad" name="enfermedad" />
+      </div>
+      <button type="submit">Buscar</button>
+    </form>
+  </div>
+  

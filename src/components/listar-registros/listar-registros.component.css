@@ -1,0 +1,74 @@
+.listar-registros {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .listar-registros h2 {
+    color: #bd93f9;
+    margin-bottom: 20px;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table-container th,
+  .table-container td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #6272a4;
+  }
+  
+  .table-container th {
+    background-color: #44475a;
+    color: #f8f8f2;
+  }
+  
+  .table-container td {
+    background-color: #282a36;
+    color: #f8f8f2;
+  }
+  
+  .table-container tr:hover {
+    background-color: #6272a4;
+  }
+  
+  .paciente-card {
+    display: flex;
+    align-items: center;
+  }
+  
+  .paciente-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .paciente-card div {
+    flex: 1;
+  }
+  
+  .paciente-card p {
+    margin: 5px 0;
+  }
+  
+  .detalle-link {
+    color: #ff79c6;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  .detalle-link:hover {
+    text-decoration: underline;
+  }
+  

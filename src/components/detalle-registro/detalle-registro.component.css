@@ -1,0 +1,32 @@
+.detalle-registro {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .detalle-registro div {
+    margin-bottom: 15px;
+  }
+  
+  .detalle-registro label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .detalle-registro img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .detalle-registro button {
+    margin-right: 10px;
+    padding: 10px 15px;
+    background-color: #5e0c59;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .detalle-registro button:last-child {
+    background-color: #dc3545;
+  }
+  

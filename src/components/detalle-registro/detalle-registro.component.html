@@ -1,0 +1,33 @@
+<div *ngIf="paciente" class="detalle-registro">
+    <h2>Detalles del Paciente</h2>
+    <div>
+      <label>RUT:</label> <span>{{ paciente.rut }}</span>
+    </div>
+    <div>
+      <label>Nombre:</label> <span>{{ paciente.nombre }}</span>
+    </div>
+    <div>
+      <label>Edad:</label> <span>{{ paciente.edad }}</span>
+    </div>
+    <div>
+      <label>Sexo:</label> <span>{{ paciente.sexo }}</span>
+    </div>
+    <div>
+      <label>Foto Personal:</label>
+      <img [src]="paciente.fotoPersonal" alt="Foto de {{ paciente.nombre }}" />
+    </div>
+    <div>
+      <label>Fecha de Ingreso:</label> <span>{{ paciente.fechaIngreso | date }}</span>
+    </div>
+    <div>
+      <label>Enfermedad:</label> <span>{{ paciente.enfermedad }}</span>
+    </div>
+    <div>
+      <label>Revisado:</label> <span>{{ paciente.revisado ? 'Sí' : 'No' }}</span>
+    </div>
+    <div>
+      <button (click)="router.navigate(['/registro/actualizar', paciente.id])">Actualizar</button> <!-- Cambiado de _id a id -->
+      <button (click)="deletePaciente()">Eliminar</button>
+    </div>
+  </div>
+  

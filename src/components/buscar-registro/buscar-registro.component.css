@@ -1,0 +1,41 @@
+.buscar-registro {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .buscar-registro div {
+    margin-bottom: 15px;
+  }
+  
+  .buscar-registro label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .buscar-registro input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  
+  .buscar-registro button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #741256;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .buscar-registro ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .buscar-registro li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
